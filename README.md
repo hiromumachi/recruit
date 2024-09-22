@@ -12,10 +12,11 @@ asdfを使用しています。[.tool-versions](.tool-versions)に使用して�
 
 ## Run
 
-###
-[const_info.dart](./lib/constant/const_info.dart)
-ConstInfoにPCのIPアドレスを記載してください
-例 http://10.0.2.2:3000   //3000 はサーバーのポート番号に合わせる
+### 事前設定
+ConstInfoにPCのIPアドレスを記載してください( //3000 はサーバーのポート番号に合わせる)  
+[const_info.dart](./lib/constant/const_info.dart)  
+
+例 http://10.0.2.2:3000  
 
 ### Freezed 更新
 - `flutter pub run build_runner build --delete-conflicting-outputs`
@@ -37,16 +38,16 @@ ConstInfoにPCのIPアドレスを記載してください
 androidは実機,iosはエミュレータで確認しました。
 
 ## ディレクトリ構成
-constant アプリ全体で使用する情報
-data 外部との通信(今回はapi)
-gen assetsとfontを変数化したもの(自動生成)
-model freezedクラスや例外など
-provider アプリ内で共有するProvider
-util アプリ内で共有するログなどのツール
-widget アプリ内ページ
-  logic ページ内で監視するロジック
-  model ページ内で使用するクラスなど
-  view ページフロント
+constant アプリ全体で使用する情報  
+data 外部との通信(今回はapi)  
+gen assetsとfontを変数化したもの(自動生成)  
+model freezedクラスや例外など  
+provider アプリ内で共有するProvider  
+util アプリ内で共有するログなどのツール  
+widget アプリ内ページ  
+	-logic ページ内で監視するロジック  
+	-model ページ内で使用するクラスなど  
+	-view ページフロント  
 
 <pre> 
 .
